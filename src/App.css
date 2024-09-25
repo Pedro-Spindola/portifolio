@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+}
+
+html, body, #root {
+  max-width: 100vw;
+  color: var(--cor-texto);
+  background-color: var(--cor-branco);
+}
+
+:root{
+  --cor-preto: rgb(20, 20, 20);
+  --cor-branco: rgb(228, 228, 228);
+  --cor-azul: rgb(50, 140, 210);
+  --cor-sombra: rgb(160, 160, 160);
+  --cor-texto: rgb(20, 20, 20);
+  --cor-card: rgb(218, 218, 218);
+}
+
+.App{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}

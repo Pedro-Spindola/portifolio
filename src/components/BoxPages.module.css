@@ -1,0 +1,19 @@
+.boxPages{
+    width: 80%;
+    padding: 40px;
+    margin-left: 20%;
+    background-color: var(--cor-branco);
+}
+@media (max-width: 1440px){
+    .boxPages{
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 999px){
+    .boxPages{
+        width: 100%;
+        height: calc(100% - 50px);
+        padding: 10px;
+    }
+}
