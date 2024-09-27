@@ -1,0 +1,49 @@
+.btnEnviar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 40px 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px var(--cor-sombra);
+    background-color: var(--cor-branco);
+    overflow: hidden;
+}
+
+.btnEnviar::after{
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 140px;
+    background-color: var(--cor-azul);
+    left: -220px;
+    border-radius: 50%;
+    transition: left ease 1s;
+}
+
+.btnEnviar:hover:after{
+    left: -170px;
+}
+
+.seta{
+    z-index: 10;
+    height: 30px;
+    transform:  scale(0.7) rotate(90deg);
+    transition: transform ease .5s;
+    padding-left: 10px;
+}
+
+.btnEnviar .h2{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btnEnviar:hover .seta{
+    transition: transform ease .5s;
+    transform:  scale(1) rotate(0deg);
+}

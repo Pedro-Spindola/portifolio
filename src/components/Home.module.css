@@ -1,0 +1,137 @@
+.home{
+    display: flex;
+    align-items: start;
+    padding: 100px 0;
+    padding: 100px 0;
+    background-color: rgb(215, 250, 225);
+}
+
+.container{
+    padding: 0 100px;
+}
+
+.container .h1{
+    width: 100%;
+    color: var(--cor-texto);
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container .h3{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-indent: 100px;
+    width: 100%;
+}
+
+.container .h2{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.boxTech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxIcone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    margin-right: 40px;
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+
+.boxIcone:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 3px var(--cor-sombra);
+}
+
+.boxIcone:nth-of-type(1) {
+    background-color: #e7d7ff;
+}
+
+.boxIcone:nth-of-type(2) {
+    background-color: #c3e9ff;
+}
+
+.boxIcone:nth-of-type(3) {
+    background-color: #ffccc4;
+}
+
+.boxIcone:nth-of-type(4) {
+    background-color: #ffe7dd;
+}
+
+.boxIcone:nth-of-type(5) {
+    background-color: #e6f5ff;
+}
+
+.boxIcone:nth-of-type(6) {
+    background-color: #f1edd3;
+}
+
+.boxIcone:nth-of-type(7) {
+    background-color: #e4f9ff;
+}
+
+.imgIcone{
+    height: 100%;
+    padding: 14px;
+}
+
+@media (max-width: 999px){
+
+    .container{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .container .h1{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    .container .h3{
+        font-size: 15px;
+        text-indent: 30px;
+        padding-top: 20px;
+        text-align: justify;
+    }
+    
+    .container .h2{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .boxTech{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .boxIcone{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imgIcone{
+        height: 100%;
+        padding: 8px;
+    }
+
+}

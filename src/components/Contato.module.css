@@ -1,0 +1,187 @@
+.contato{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+.tituloH1{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.formEmail{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.inputText, .inputEmail, .inputTelefone, .textarea{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px var(--cor-sombra);
+    background-color: var(--cor-branco);
+}
+
+.inputText:focus, .inputEmail:focus, .inputTelefone:focus, .textarea:focus{
+    outline: none;
+    border: 1px solid var(--cor-azul);
+}
+
+.textarea{
+    min-height: 100px;
+    padding-top: 10px;
+    resize: vertical;
+}
+
+.boxRedeSocias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 200px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.boxBtnRedeSocias{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.redeSociasH1{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* WhatsApp*/
+
+.btnBoxA:nth-of-type(1){
+    background-color: #128c7e;
+}
+
+.btnBoxA:nth-of-type(1)::after{
+    background-image: linear-gradient(to right bottom, #0fa044, #25d366);
+    background-color: #25d366;
+}
+
+.btnTextH2WhatsApp{
+    color: #dce6f1;
+}
+
+
+/* GitHub */
+
+.btnBoxA:nth-of-type(2){
+    background-color: rgb(10, 10, 10);
+}
+
+.btnBoxA:nth-of-type(2)::after{
+    background-image: linear-gradient(to right bottom, rgb(40, 40, 40), rgb(60, 60, 60));
+}
+
+.btnTextH2GitHub{
+    color: rgb(228, 228, 228);
+}
+
+/* Linkedin */
+
+.btnBoxA:nth-of-type(3){
+    background-color: #004182;
+}
+
+.btnBoxA:nth-of-type(3)::after{
+    background-color: #0a66c2;
+    background-image: linear-gradient(to right bottom, #0a539b, #3581cc);
+}
+
+.btnTextH2Linkedin{
+    color: rgb(228, 228, 228);
+}
+
+/* Instagram */
+
+.btnBoxA:nth-of-type(4){
+    background-color: rgb(20, 20, 20);
+}
+
+
+.btnBoxA:nth-of-type(4)::after{
+    background-image: linear-gradient(to right bottom, #405de6, #833ab4, #e1306c, #f56040, #fcaf45);
+}
+
+.btnTextH2Instagram{
+    color: #e4e4e4;
+}
+
+/* Web Site */
+
+.btnBoxA:nth-of-type(5){
+    background-color: rgb(20, 20, 20);
+}
+
+.btnBoxA:nth-of-type(5)::after{
+    background-image: linear-gradient(to right bottom, #1d62b1, #328cd2);
+}
+
+.btnTextH2Site{
+    color: rgb(228, 228, 228);
+}
+
+
+
+@media (max-width: 999px){
+
+    .tituloH1{
+        padding-top: 20px;
+    }
+
+    .formEmail{
+        margin-bottom: 0px;
+    }
+
+    .inputText, .inputEmail, .inputTelefone, .textarea{
+        height: 40px;
+        margin-top: 15px;
+    }
+    
+    .textarea{
+        min-height: 80px;
+        padding-top: 6px;
+    }
+
+    .redeSociasH1{
+        padding: 0;
+    }
+
+    .boxRedeSocias{
+        width: 100%;
+    }
+
+    .boxBtnRedeSocias{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
