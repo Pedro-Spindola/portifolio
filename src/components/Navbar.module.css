@@ -1,4 +1,5 @@
 .navbar{
+    position: fixed;
     display: flex;
     z-index: 100;
     align-content: center;
@@ -7,13 +8,12 @@
     height: 80px;
     width: 100%;
     background-color: var(--cor-azul);
-    box-shadow: 0px 2px 2px var(--cor-sombra);
 }
 
 .boxFoto{
     width: 200px;
     overflow: hidden;
-    margin-left: 20px;
+    margin: 0 140px;
 }
 
 .imgPerfil{
@@ -22,17 +22,18 @@
 
 .nav{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    width: calc(100% - 220px);
+    width: 1440px;
 }
 .lineMenu{
     display: flex;
-    margin-right: 50px;
     cursor: pointer;
+    margin: 0 20px;
 }
 
 .nav .img{
+    display: none;
     height: 30px;
     margin-right: 20px;
     text-align: center;
@@ -61,4 +62,25 @@
 }
 
 @media (max-width: 999px){
+    .navbar{
+        height: 40px;
+        bottom: 0;
+    }
+    .boxFoto{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav .img{
+        display: flex;
+        margin-right: 0px;
+    }
+    .nav .h2Nav{
+        display: none;
+    }
+    .lineMenu{
+        margin-right: 0px;
+    }
 }

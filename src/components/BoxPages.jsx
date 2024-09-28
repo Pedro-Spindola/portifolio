@@ -3,6 +3,7 @@ import Principal from './Principal'
 import Home from './Home'
 import Sobre from './Sobre'
 import Projetos from './Projetos'
+import Contato from './Contato'
 import Footer from './Footer'
 
 function BoxPages() {
@@ -12,6 +13,7 @@ function BoxPages() {
       <Home/>
       <Sobre/>
       <Projetos/>
+      <Contato/>
       <Footer/>
     </section>
   )

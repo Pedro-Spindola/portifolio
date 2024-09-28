@@ -1,13 +1,14 @@
 .principal{
+    position: relative;
     display: flex;
+    margin-top: 80px;
     padding-top: 300px;
     padding-bottom: calc(100vh - 400px);
+    background-image: linear-gradient(to bottom, #78b4dc, #9fbee0, #bdc9e2, #d4d5e3, #e4e4e4);
 }
 
 .container{
-    height: 100px;
-    width: 100%;
-    padding: 0 2%;
+    width: 1440px;
 }
 
 .container .h1{
@@ -27,6 +28,14 @@
 }
 
 @media (max-width: 999px){
+    .principal{
+        margin-top: 0;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+    
     .container .h1{
         font-size: 26px;
         font-weight: 500;

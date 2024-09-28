@@ -3,14 +3,10 @@ import PropTypes from 'prop-types'
 import GitHub from '../assets/github.svg'
 import Olho from '../assets/olho.svg'
 
-function Card({foto, nome, comentario, linkGit, linkPage, numeroProjeto}) {
+function Card({foto, nome, comentario, linkGit, linkPage}) {
   
   return (
     <div className={styles.card}>
-      <div className={styles.boxMenu}>
-        <h1 className={styles.h1NumeroProjeto}>{numeroProjeto}</h1>
-        <h1 className={styles.h1NomeProjeto}>{nome}</h1>
-      </div>
       <div className={styles.boxTexto}>
         <h1 className={styles.h1Titulo}>{nome}</h1>
         <h2 className={styles.h2Descricao}>{comentario}</h2>
@@ -34,7 +30,6 @@ Card.propTypes = {
   comentario: PropTypes.string.isRequired,
   linkGit: PropTypes.string.isRequired,
   linkPage: PropTypes.string.isRequired,
-  numeroProjeto: PropTypes.string.isRequired,
 };
 
 export default Card

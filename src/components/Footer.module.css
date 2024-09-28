@@ -15,8 +15,11 @@
     color: var(--color-off-1);
 }
 
-@media (max-width: 768px){
+@media (max-width: 999px){
     .direitos h2{
         font-size: 9px;
+    }
+    .direitos{
+        margin-bottom: 40px;
     }
 }

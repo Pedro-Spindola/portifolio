@@ -3,11 +3,11 @@
     align-items: start;
     padding: 100px 0;
     padding: 100px 0;
-    background-color: rgb(215, 250, 225);
+    background-color: var(--cor-branco);
 }
 
 .container{
-    padding: 0 2%;
+    width: 1440px;
 }
 
 .container .h1{
@@ -24,6 +24,7 @@
     letter-spacing: 0.5px;
     text-indent: 100px;
     width: 100%;
+    text-align: justify;
 }
 
 .container .h2{
@@ -82,7 +83,15 @@
 }
 
 .boxIcone:nth-of-type(7) {
-    background-color: #e4f9ff;
+    background-color: #e4fff9;
+}
+
+.boxIcone:nth-of-type(8) {
+    background-color: #d4e8f7;
+}
+
+.boxIcone:nth-of-type(9) {
+    background-color: #f3d7d3;
 }
 
 .imgIcone{
@@ -94,6 +103,7 @@
 
     .container{
         width: 100%;
+        padding: 0 20px;
     }
 
     .container .h1{
@@ -126,6 +136,7 @@
         height: 40px;
         margin-right: 20px;
         margin-bottom: 20px;
+        border-radius: 14%;
     }
 
     .imgIcone{

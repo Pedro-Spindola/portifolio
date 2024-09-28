@@ -1,33 +1,11 @@
 .card{
     display: flex;
-    width: calc(100% - 150px);
-    transition: width 0.3s;
+    width: 100%;
     height: 800px;
     justify-content: center;
-    border-radius: 20px;
     box-shadow: 2px 2px 4px var(--cor-sombra);
     background-color: var(--cor-card);
     overflow: hidden;
-}
-.boxMenu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50px;
-    height: 100%;
-    background-color: var(--cor-azul);
-}
-.h1NumeroProjeto{
-    font-size: 40px;
-    font-weight: 500;
-}
-.h1NomeProjeto{
-    font-size: 20px;
-    font-weight: 500;
-    padding-top: 20px;
-    writing-mode: vertical-rl;
-    letter-spacing: 5px;
-    
 }
 .boxTexto{
     position: relative;
@@ -35,7 +13,7 @@
     flex-wrap: wrap;
     align-content: start;
     height: 100%;
-    width: calc(60% - 50px);
+    width: 60%;
     padding: 40px;
 }
 
@@ -51,6 +29,7 @@
     font-size: 18px;
     text-indent: 50px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .boxTech{
@@ -64,7 +43,6 @@
 .boxBotao{
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     bottom: 0px;
@@ -87,7 +65,8 @@
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 .button:hover{
@@ -133,22 +112,47 @@
 }
 
 @media (max-width: 999px){
+    .card{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .boxTexto{
+        width: 100%;
+        height: 60%;
+        padding: 20px;
+    }
+    .boxFoto{
+        width: 100%;
+        height: 40%;
+    }
+    .h1Titulo{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    
+    .h2Descricao{
+        width: 100%;
+        font-size: 14px;
+    }
     .button{
+        width: 150px;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin: 20px;
+        margin: 0px 10px 20px 0px;
     }
 
     .buttonImg{
         position: absolute;
         z-index: 10;
         height: 26px;
-        left: 12px;
+        left: 6px;
     }
     
     .button:hover:after{
-        left: 0px;
+        left: -15px;
     }
 }
 

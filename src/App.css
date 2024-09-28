@@ -15,12 +15,15 @@ html, body, #root {
 :root{
   --cor-preto: rgb(20, 20, 20);
   --cor-branco: rgb(228, 228, 228);
-  --cor-azul: rgb(50, 140, 210);
+  --cor-azul: rgb(120, 180, 220);
   --cor-sombra: rgb(160, 160, 160);
   --cor-texto: rgb(20, 20, 20);
   --cor-card: rgb(218, 218, 218);
 }
-
+/*
+  --cor-azul: rgb(50, 140, 210);
+  --cor-azul: rgb(120, 180, 220);
+*/
 .App{
   display: flex;
   flex-wrap: wrap;

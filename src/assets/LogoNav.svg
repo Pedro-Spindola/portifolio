@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140" viewBox="0 0 200 140">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 83px;
+        fill: #141414;
+        font-family: Poppins;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #005f9b;
+      }
+
+      .cls-3 {
+        fill: #0d95c7;
+      }
+    </style>
+  </defs>
+  <text id="_S_" data-name="&lt;S/&gt;" class="cls-1" transform="matrix(1.155, 0, 0, 1.155, -0.307, 106.97)">&lt;<tspan class="cls-2">S<tspan class="cls-3">/</tspan></tspan>&gt;</text>
+</svg>

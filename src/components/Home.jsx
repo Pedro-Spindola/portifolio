@@ -7,6 +7,8 @@ import Html from "../assets/html.svg"
 import Java from "../assets/java.svg"
 import JavaScript from "../assets/javaScript.svg"
 import ReactIcone from "../assets/react.svg"
+import PhotoShop from "../assets/photoshop.svg"
+import Illustrator from "../assets/illustrator.svg"
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
           <div className={styles.boxIcone}><img className={styles.imgIcone} src={Java} alt="" /></div>
           <div className={styles.boxIcone}><img className={styles.imgIcone} src={JavaScript} alt="" /></div>
           <div className={styles.boxIcone}><img className={styles.imgIcone} src={ReactIcone} alt="" /></div>
+          <div className={styles.boxIcone}><img className={styles.imgIcone} src={PhotoShop} alt="" /></div>
+          <div className={styles.boxIcone}><img className={styles.imgIcone} src={Illustrator} alt="" /></div>
         </div>
       </Container>
     </section>

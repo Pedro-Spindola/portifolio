@@ -2,14 +2,3 @@
     width: 100%;
     background-color: var(--cor-branco);
 }
-@media (max-width: 1440px){
-    
-}
-
-@media (max-width: 999px){
-    .boxPages{
-        width: 100%;
-        height: calc(100% - 50px);
-        padding: 10px;
-    }
-}

@@ -1,15 +1,14 @@
 .contato{
     display: flex;
-    height: 100%;
     align-items: center;
+    padding: 100px 0px;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-content: start;
-    width: 100%;
-    height: 100%;
+    width: 1440px;
 }
 
 .tituloH1{
@@ -24,7 +23,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin-bottom: 30px;
 }
 
@@ -53,7 +52,7 @@
 .boxRedeSocias{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     height: 200px;
     align-content: center;
     justify-content: space-between;

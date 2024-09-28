@@ -3,41 +3,76 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.card {
-  width: 100px;
-  transition: width 0.3s; /* Suaviza a transição da largura */
-}
-
-.card.selected {
-  width: 100%; /* Faz o card selecionado ocupar 100% do espaço disponível */
-}
 
 .container{
     display: flex;
     justify-content: center;
     align-content: start;
-    width: 100%;
-    height: 100%;
-    padding: 0 2%;
+    width: 1440px;
     padding-bottom: 40px;
 }
 
-.tituloProjeto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.selectProjeto{
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 100%;
+  background-image: linear-gradient(to left, #78b4dc, #78b4dc, #9fbee0);
+  box-shadow: 2px 2px 4px var(--cor-sombra);
 }
 
-.boxProjetos{
+.projetoAtivo{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 0px;
+  height: 100%;
+  opacity: 0;
+  transition: width 1.5s ease, opacity 0.8s ease;
+}
+.projetoAtivo.select{
+  width: calc(100% - 200px);
+  opacity: 1;
+}
+
+.h1NumeroProjeto{
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.h1NomeProjeto{
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 5px;
+}
+
+.tituloProjeto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 100px;
+}
+
+.lineBoxProjetos{
+  display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   width: 100%;
+  padding: 10px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .boxUnicoProjeto{
@@ -51,21 +86,21 @@
     align-items: center;
     height: 30px;
     width: 100%;
-  }
+}
   
-  .bolinha, .bolinhaAtiva {
-    width: 18px;
-    height: 18px;
-    margin: 0 5px;
-    border-radius: 50%;
-    background-color: var(--cor-sombra);
-    cursor: pointer;
-  }
-  
-  .bolinhaAtiva {
-    background-color: var(--cor-azul)
-  }
-  
+.bolinha, .bolinhaAtiva {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: var(--cor-sombra);
+  cursor: pointer;
+}
+
+.bolinhaAtiva {
+  background-color: var(--cor-azul)
+}
+
   
 @media (max-width: 1440px){
   .boxUnicoProjeto{
@@ -77,6 +112,51 @@
   .boxUnicoProjeto{
     width: 100%;
     margin: 30px 0;
+  }
+  .lineBoxProjetos{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+  }
+  .selectProjeto{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left, #328cd2, #328cd2, #4396d8, #4396d8, #4396d8);
+  }
+  
+  .h1NumeroProjeto{
+    font-size: 34px;
+    font-weight: 500;
+    padding-bottom: 0px;
+  }
+  
+  .h1NomeProjeto{
+    writing-mode: horizontal-tb;
+    padding-top: 0px;
+    transform: rotate(0deg);
+    letter-spacing: 2px;
+  }
+  .projetoAtivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    transition: height 1s ease, opacity 0.8s ease;
+  }
+  .projetoAtivo.select{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .tituloProjeto{
+    padding-bottom: 50px;
   }
 }
 
