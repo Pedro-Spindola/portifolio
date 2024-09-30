@@ -23,6 +23,10 @@
   box-shadow: 2px 2px 4px var(--cor-sombra);
 }
 
+.selectProjeto:nth-of-type(1){
+  background-image: linear-gradient(to bottom, #dd5b16, #e77439, #f18c57, #f9a376, #ffba96);
+}
+
 .projetoAtivo{
   display: flex;
   flex-direction: column;
@@ -106,9 +110,17 @@
   .boxUnicoProjeto{
     margin: 10px 0;
   }
+  .container{
+    width: 100%;
+    padding: 0 5%;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 999px){
+  .container{
+    padding-bottom: 0px;
+}
   .boxUnicoProjeto{
     width: 100%;
     margin: 30px 0;

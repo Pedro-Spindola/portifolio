@@ -12,6 +12,7 @@ html, body, #root {
   background-color: var(--cor-branco);
 }
 
+
 :root{
   --cor-preto: rgb(20, 20, 20);
   --cor-branco: rgb(228, 228, 228);

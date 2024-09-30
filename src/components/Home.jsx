@@ -12,7 +12,7 @@ import Illustrator from "../assets/illustrator.svg"
 
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id="home">
       <Container className={styles.container}>
         <h1 className={styles.h1}>Transformo ideias em soluções criativas e funcionais.</h1>
         <h3 className={styles.h3}>Cada projeto é uma oportunidade de criar algo único. Ofereço soluções personalizadas que atendem às necessidades específicas de cada projeto, com um olhar atento aos detalhes e uma abordagem centrada no resultado. Meu objetivo é transformar suas ideias em realidade, entregando soluções que combinam inovação, estética e funcionalidade. Navegue pelo meu portfólio e descubra como posso ajudar a dar vida à sua visão.</h3>
