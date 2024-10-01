@@ -6,6 +6,7 @@
     box-shadow: 2px 2px 4px var(--cor-sombra);
     background-color: var(--cor-card);
     overflow: hidden;
+    flex-direction: row-reverse;
 }
 .boxTexto{
     position: relative;

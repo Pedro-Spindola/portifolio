@@ -23,8 +23,16 @@
   box-shadow: 2px 2px 4px var(--cor-sombra);
 }
 
-.selectProjeto:nth-of-type(1){
+.selectProjeto1{
   background-image: linear-gradient(to bottom, #dd5b16, #e77439, #f18c57, #f9a376, #ffba96);
+}
+
+.selectProjeto2{
+  background-image: linear-gradient(to bottom, #cbbe35, #9fbb48, #79b45e, #59aa71, #439e7f);
+}
+
+.selectProjeto3{
+  background-image: linear-gradient(to bottom, #e3251d, #b9231f, #8f211e, #671d1b, #401816);
 }
 
 .projetoAtivo{
@@ -77,6 +85,7 @@
   height: 600px;
   border-radius: 20px;
   overflow: hidden;
+
 }
 
 .boxUnicoProjeto{
