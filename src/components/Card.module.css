@@ -8,6 +8,7 @@
     overflow: hidden;
     flex-direction: row-reverse;
 }
+
 .boxTexto{
     position: relative;
     display: flex;
@@ -34,11 +35,43 @@
 }
 
 .boxTech{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: start;
     width: 100%;
-    height: 40px;
+    height: 30px;
+    bottom: 80px;
+}
+
+.boxTech::after{
+    content: "TECNOLOGIAS UTILIZADAS";
+    position: absolute;
+    font-size: 12px;
+    font-weight: 200;
+    top: -20px;
+
+}
+
+.boxIcone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 20%;
+    margin-right: 10px;
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+
+.boxIcone:hover{
+    transform: scale(1.1);
+}
+
+.imgIcone{
+    height: 100%;
+    padding: 2px;
+    filter: grayscale(100%);
 }
 
 .boxBotao{
@@ -55,7 +88,7 @@
     align-items: center;
     justify-content: center;
     width: 200px;
-    height: 50px;
+    height: 40px;
     background-color: var(--cor-branco);
     border-radius: 8px;
     box-shadow: 1px 1px 3px var(--cor-sombra);
@@ -77,15 +110,28 @@
 .button::after{
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     background-color: var(--cor-azul);
-    left: -45px;
-    transition: left ease .5s;
+    left: -150px;
+    transition: left ease 1s;
 }
 
 .button:hover:after{
     left: 0px;
+}
+
+.button:nth-of-type(1):before{
+    content: "GitHub";
+    position: absolute;
+    z-index: 11;
+}
+
+
+.button:nth-of-type(2):before{
+    content: "Projeto";
+    position: absolute;
+    z-index: 11;
 }
 
 .buttonImg{
@@ -117,32 +163,40 @@
         height: auto;
         flex-wrap: wrap;
     }
+
     .boxTexto{
         width: 100%;
         height: 60%;
         padding: 20px;
     }
+
     .boxFoto{
         width: 100%;
         height: 40%;
     }
+
     .h1Titulo{
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         padding-bottom: 10px;
     }
-    
+
     .h2Descricao{
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
+
+    .boxBotao{
+        left: 15px;
+    }
+
     .button{
-        width: 150px;
+        width: 140px;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 1px;
-        margin: 0px 10px 20px 0px;
+        margin: 0px 20px 20px 0px;
     }
 
     .buttonImg{
@@ -152,8 +206,22 @@
         left: 6px;
     }
     
+    .button::after{
+        width: 140px;
+        left: -100px;
+    }
+
     .button:hover:after{
-        left: -15px;
+        width: 140px;
+        left: 0px;
+    }
+    
+    .button:nth-of-type(1):before{
+        padding-left: 20px;
+    }
+    
+    .button:nth-of-type(2):before{
+        padding-left: 20px;
     }
 }
 
